@@ -6,7 +6,7 @@ function HomePage() {
     const [products, setProducts] = useState([]);
 
     useEffect(() => {
-        axios.get('http://localhost:5000/api/products')
+        axios.get('https://tekno-commissions-6a57d34016ea.herokuapp.com/')
             .then(response => setProducts(response.data))
             .catch(error => console.error('There was an error fetching the products!', error));
     }, []);

@@ -9,7 +9,6 @@ function RegisterPage() {
         e.preventDefault();
         try {
             await axios.post('https://tekno-commissions-6a57d34016ea.herokuapp.com/api/auth/register', { username, password });
-            // Redirect or update UI
         } catch (error) {
             console.error('There was an error registering!', error);
         }
